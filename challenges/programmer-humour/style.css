@@ -1,0 +1,40 @@
+:root {
+  --white: #ffffff;
+}
+
+body {
+  background: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+}
+
+.gallery {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+#xkcd-image {
+  margin: auto 0;
+}
+.image {
+  /* max-width: 100%;
+  object-fit: contain; */
+  /* height: 100%;
+  width: 100%; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1em;
+}
+.footer {
+  margin-top: 6em;
+  background-color: black;
+  color: var(--white);
+}
+
+.xkcd-info a:link {
+  color: var(--white);
+}
+
+.xkcd-info a:visited {
+  color: var(--white);
+}

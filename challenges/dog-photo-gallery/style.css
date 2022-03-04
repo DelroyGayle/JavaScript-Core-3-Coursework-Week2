@@ -1,0 +1,118 @@
+:root {
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: url(https://s29938.pcdn.co/au/wp-content/uploads/sites/2/2021/02/Wallpaper-Linz-Doggies-Cream-1.jpg.optimal.jpg);
+}
+
+/* ASIDE IN ORDER TO PLACE THE STICKY BUTTON */
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196f3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+#imagelist {
+  list-style-type: none; /* Remove bullet */
+}
+
+.gridDisplay {
+  display: grid;
+  gap: 3em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-flow: row dense;
+}
+
+.image {
+  max-width: 100%;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.button {
+  background-color: #008cba; /* Gray */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.nextbutton {
+  background-color: #e7e7e7; /* grey */
+  color: black;
+}
+
+/* STICKY BUTTON */
+
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.footer {
+  margin-top: 6em;
+  background-color: rgba(220, 0, 0, 1);
+  color: var(--white);
+}
+
+.dogceo-info a:link {
+  color: var(--white);
+}
+
+.dogceo-info a:visited {
+  color: var(--white);
+}
