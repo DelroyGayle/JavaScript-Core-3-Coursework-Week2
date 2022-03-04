@@ -10,7 +10,7 @@ body {
 /* ASIDE IN ORDER TO PLACE THE STICKY BUTTON */
 
 .sidenav {
-  width: 130px;
+  width: 8.125em; /* 130px; 
   position: fixed;
   z-index: 1;
   top: 20px;
@@ -67,18 +67,13 @@ body {
   font-size: 16px;
 }
 
-.nextbutton {
-  background-color: #e7e7e7; /* grey */
-  color: black;
-}
-
 /* STICKY BUTTON */
 
 .styled {
   border: 0;
-  line-height: 2.5;
+  line-height: 1.5;
   padding: 0 20px;
-  font-size: 1rem;
+  font-size: 1.4rem;
   text-align: center;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
@@ -107,6 +102,7 @@ body {
   margin-top: 6em;
   background-color: rgba(220, 0, 0, 1);
   color: var(--white);
+  font-size: 1.4em;
 }
 
 .dogceo-info a:link {
