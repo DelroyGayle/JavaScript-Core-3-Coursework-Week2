@@ -1,5 +1,6 @@
 :root {
   --white: #ffffff;
+  --black: #000000;
 }
 
 body {
@@ -10,20 +11,20 @@ body {
 /* ASIDE IN ORDER TO PLACE THE STICKY BUTTON */
 
 .sidenav {
-  width: 8.125em; /* 130px; 
+  width: 8.125em; /* 130px; */
   position: fixed;
   z-index: 1;
-  top: 20px;
-  left: 10px;
+  top: 1.25em; /* 20px */
+  left: 0.625em; /* 10px */
   background: #eee;
   overflow-x: hidden;
   padding: 8px 0;
 }
 
 .sidenav a {
-  padding: 6px 8px 6px 16px;
+  padding: 0.375em 0.5em 0.375em 1em; /* 6px 8px 6px 16px; */
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.563em; /* 25px */
   color: #2196f3;
   display: block;
 }
@@ -33,9 +34,9 @@ body {
 }
 
 .main {
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+  margin-left: 8.75em; /* 140px; Same width as the sidebar + left position in px */
+  font-size: 1.75em; /* 28px; Increased text to enable scrolling */
+  padding: 0 0.625em; /* 0px 10px */
 }
 
 #imagelist {
@@ -57,14 +58,14 @@ body {
 }
 
 .button {
-  background-color: #008cba; /* Gray */
+  background-color: #008cba;
   border: none;
-  color: black;
-  padding: 15px 32px;
+  color: var(--black);
+  padding: 0.938em 2em; /* 15px 32px; */
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1em; /* 16px; */
 }
 
 /* STICKY BUTTON */
@@ -72,12 +73,12 @@ body {
 .styled {
   border: 0;
   line-height: 1.5;
-  padding: 0 20px;
+  padding: 0 1.25em; /* 20px */
   font-size: 1.4rem;
   text-align: center;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
-  border-radius: 10px;
+  color: var(--white);
+  text-shadow: 0.063rm 0.063rm 0.063rm var(--black); /* 1px 1px 1px #000; */
+  border-radius: 0.625em; /* 10px */
   background-color: rgba(220, 0, 0, 1);
   background-image: linear-gradient(
     to top left,
@@ -85,8 +86,8 @@ body {
     rgba(0, 0, 0, 0.2) 30%,
     rgba(0, 0, 0, 0)
   );
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0.125em 0.125em 0.188em rgba(255, 255, 255, 0.6),
+    /* 2px 2px 3px */ inset -0.125em -0.125em 0.188em rgba(0, 0, 0, 0.6); /* -2px -2px 3px */
 }
 
 .styled:hover {
@@ -94,8 +95,8 @@ body {
 }
 
 .styled:active {
-  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: inset -0.125em -0.125em 0.188em rgba(255, 255, 255, 0.6),
+    /* -2px -2px 3px */ inset 0.125em 0.125em 0.188em rgba(0, 0, 0, 0.6); /* 2px 2px 3px */
 }
 
 .footer {
